@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pozadi_menu"
+    tools:context=".MainActivity">
+
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:fadeScrollbars="false"
+        android:focusableInTouchMode="false"
+        android:foreground="@android:color/transparent"
+        android:hapticFeedbackEnabled="false"
+        android:keepScreenOn="false"
+        android:longClickable="false"
+        android:saveEnabled="false"
+        android:soundEffectsEnabled="false" />
+
+    <TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginLeft="18dp"
+    android:layout_marginTop="5dp"
+    android:height="20dp"
+    android:onClick="rizikoveFenomenyClick"
+    android:text="Rizikové komunikační fenomény" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="229dp"
+        android:layout_marginLeft="229dp"
+        android:layout_marginTop="5dp"
+        android:text="Výzkum" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="292dp"
+        android:layout_marginLeft="292dp"
+        android:layout_marginTop="5dp"
+        android:text="Kde hledat pomoc" />
+
+    <ImageView
+        android:contentDescription="ebezpeci"
+        android:id="@+id/imageView"
+        android:layout_width="356dp"
+        android:layout_height="309dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_alignEnd="@+id/videoView"
+        android:layout_alignRight="@+id/videoView"
+        android:layout_alignBottom="@+id/videoView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/introtext" />
+
+</RelativeLayout>

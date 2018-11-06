@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">E-Bezpeci</string>
+    <string name="title_activity_rizikove_fenomeny">RizikoveFenomeny</string>
+
+    <string name="title_activity_kybersikana">KybersikanaActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
