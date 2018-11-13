@@ -36,7 +36,8 @@
         android:layout_alignLeft="@+id/kybersikana"
         android:layout_alignTop="@+id/kybergrooming"
         android:layout_marginTop="70dp"
-        android:src="@drawable/icon_sexting" />
+        android:src="@drawable/icon_sexting"
+        android:onClick="sextingClick"/>
 
     <ImageView
         android:contentDescription="webcamtrolling"
@@ -46,38 +47,42 @@
         android:layout_alignTop="@+id/kybersikana"
         android:layout_alignLeft="@+id/kybersikana"
         android:layout_marginLeft="200dp"
-        android:src="@drawable/icon_webcamtrolling" />
+        android:src="@drawable/icon_webcamtrolling"
+        android:onClick="webcamtrollingClick"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/challenge"
         android:layout_width="180dp"
         android:layout_height="60dp"
         android:layout_alignTop="@+id/kybergrooming"
         android:layout_alignLeft="@+id/kybergrooming"
         android:layout_marginLeft="200dp"
         android:contentDescription="online výzvy"
-        android:src="@drawable/icon_challenge" />
+        android:src="@drawable/icon_challenge"
+        android:onClick="challengeClick"/>
 
     <ImageView
         android:contentDescription="fake news"
         android:id="@+id/imageView3"
         android:layout_width="252dp"
         android:layout_height="72dp"
-        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignStart="@+id/challenge"
         android:layout_alignParentTop="true"
         android:layout_marginTop="159dp"
-        android:src="@drawable/icon_fakenews" />
+        android:src="@drawable/icon_fakenews"
+        android:onClick="fakenewsClick"/>
 
     <ImageView
         android:contentDescription="hoax"
         android:id="@+id/imageView4"
         android:layout_width="253dp"
         android:layout_height="63dp"
-        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignStart="@+id/challenge"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="0dp"
         android:layout_marginBottom="77dp"
-        android:src="@drawable/icon_hoax" />
+        android:src="@drawable/icon_hoax"
+        android:onClick="hoaxClick"/>
 
     <TextView
         android:id="@+id/textView"

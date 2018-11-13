@@ -28,7 +28,14 @@
             android:name=".KybersikanaActivity"
             android:label="@string/title_activity_kybersikana"
             android:screenOrientation="sensorLandscape" />
-        <activity android:name=".KybergroomingActivity"></activity>
+        <activity android:name=".KybergroomingActivity" />
+        <activity android:name=".SextingActivity" />
+        <activity android:name=".WebcamtrollingActivity" />
+        <activity android:name=".ChallengeActivity" />
+        <activity
+            android:name=".FakenewsActivity"
+            android:label="@string/title_activity_fakenews" />
+        <activity android:name=".HoaxActivity"></activity>
     </application>
 
 </manifest>

@@ -27,4 +27,29 @@ public class RizikoveFenomeny extends Activity {
         Intent intent = new Intent(this, KybergroomingActivity.class);
         startActivity(intent);
     }
+
+    public void sextingClick(View view) {
+        Intent intent = new Intent(this, SextingActivity.class);
+        startActivity(intent);
+    }
+
+    public void webcamtrollingClick(View view) {
+        Intent intent = new Intent(this, WebcamtrollingActivity.class);
+        startActivity(intent);
+    }
+
+    public void challengeClick(View view) {
+        Intent intent = new Intent(this, ChallengeActivity.class);
+        startActivity(intent);
+    }
+
+    public void fakenewsClick(View view) {
+        Intent intent = new Intent(this, FakenewsActivity.class);
+        startActivity(intent);
+    }
+
+    public void hoaxClick(View view) {
+        Intent intent = new Intent(this, HoaxActivity.class);
+        startActivity(intent);
+    }
 }
