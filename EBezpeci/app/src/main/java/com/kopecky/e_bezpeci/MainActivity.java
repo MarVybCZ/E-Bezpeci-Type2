@@ -13,11 +13,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        VideoView videoView = findViewById(R.id.videoView);
-        //MediaController mediaController = new MediaController(this);
-        // mediaController.setAnchorView(videoView);
-        //videoView.setMediaController(mediaController);
-
+        VideoView videoView = findViewById(R.id.VVBlesk);
         videoView.setVideoPath("android.resource://"+  getPackageName() + "/raw/video");
 
         //https://stackoverflow.com/questions/4746075/seamless-video-loop-with-videoview

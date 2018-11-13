@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CLMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/pozadi_menu"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
 
     <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="296dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
+        android:id="@+id/VVBlesk"
+        android:layout_width="300sp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginEnd="0sp"
+        android:layout_marginRight="0sp"
+        android:layout_marginBottom="0sp"
         android:background="@android:color/transparent"
         android:clickable="false"
         android:fadeScrollbars="false"
@@ -27,60 +27,63 @@
         android:keepScreenOn="false"
         android:longClickable="false"
         android:saveEnabled="false"
-        android:soundEffectsEnabled="false" />
+        android:soundEffectsEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-    android:id="@+id/textView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentStart="true"
-    android:layout_alignParentLeft="true"
-    android:layout_alignParentTop="true"
-    android:layout_marginLeft="18dp"
-    android:layout_marginTop="5dp"
-    android:height="20dp"
-    android:onClick="rizikoveFenomenyClick"
-    android:text="Rizikové komunikační fenomény" />
-
-    <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/TVRizikove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="229dp"
-        android:layout_marginLeft="229dp"
-        android:layout_marginTop="5dp"
-        android:text="Výzkum" />
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:height="20sp"
+        android:onClick="rizikoveFenomenyClick"
+        android:text="Rizikové komunikační fenomény"
+        android:textFontWeight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/TVKrizove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="292dp"
-        android:layout_marginLeft="292dp"
-        android:layout_marginTop="5dp"
-        android:text="Kde hledat pomoc" />
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Výzkum"
+        android:textFontWeight="1"
+        app:layout_constraintStart_toEndOf="@+id/TVRizikove"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVPomoc"
+        android:layout_width="wrap_content"
+        android:layout_height="17dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="8dp"
+        android:text="Kde hledat pomoc"
+        android:textFontWeight="1"
+        app:layout_constraintStart_toEndOf="@+id/TVKrizove"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:contentDescription="ebezpeci"
-        android:id="@+id/imageView"
-        android:layout_width="356dp"
-        android:layout_height="309dp"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_alignEnd="@+id/videoView"
-        android:layout_alignRight="@+id/videoView"
-        android:layout_alignBottom="@+id/videoView"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="30dp"
+        android:id="@+id/IVebezpeci"
+        android:layout_width="350sp"
+        android:layout_height="match_parent"
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/introtext" />
+        android:contentDescription="ebezpeci"
+        android:src="@drawable/introtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

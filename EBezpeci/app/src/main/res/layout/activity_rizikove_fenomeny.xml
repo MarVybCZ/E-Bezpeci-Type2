@@ -25,7 +25,8 @@
         android:layout_alignTop="@+id/kybersikana"
         android:layout_alignLeft="@+id/kybersikana"
         android:layout_marginTop="70dp"
-        android:src="@drawable/icon_kybergrooming" />
+        android:src="@drawable/icon_kybergrooming"
+        android:onClick="kybergroomingClick"/>
 
     <ImageView
         android:contentDescription="sexting"

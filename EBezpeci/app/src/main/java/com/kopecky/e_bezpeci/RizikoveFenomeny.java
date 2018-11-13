@@ -3,6 +3,7 @@ package com.kopecky.e_bezpeci;
 import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
+import android.view.View;
 
 public class RizikoveFenomeny extends Activity {
 
@@ -19,6 +20,11 @@ public class RizikoveFenomeny extends Activity {
 
     public void kybersikanaClick(android.view.View view){
         Intent intent = new Intent(this, KybersikanaActivity.class);
+        startActivity(intent);
+    }
+
+    public void kybergroomingClick(View view) {
+        Intent intent = new Intent(this, KybergroomingActivity.class);
         startActivity(intent);
     }
 }
