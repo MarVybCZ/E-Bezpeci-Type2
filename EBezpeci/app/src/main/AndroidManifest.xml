@@ -35,7 +35,9 @@
         <activity
             android:name=".FakenewsActivity"
             android:label="@string/title_activity_fakenews" />
-        <activity android:name=".HoaxActivity"></activity>
+        <activity android:name=".HoaxActivity" />
+        <activity android:name=".PomocActivity" />
+        <activity android:name=".KrizoveActivity"></activity>
     </application>
 
 </manifest>

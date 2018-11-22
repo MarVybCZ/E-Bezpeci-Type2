@@ -57,7 +57,8 @@
         android:text="Výzkum"
         android:textFontWeight="1"
         app:layout_constraintStart_toEndOf="@+id/TVRizikove"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="krizoveClick"/>
 
     <TextView
         android:id="@+id/TVPomoc"
@@ -69,7 +70,8 @@
         android:text="Kde hledat pomoc"
         android:textFontWeight="1"
         app:layout_constraintStart_toEndOf="@+id/TVKrizove"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="pomocClick"/>
 
     <ImageView
         android:id="@+id/IVebezpeci"
