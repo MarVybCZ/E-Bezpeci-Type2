@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@drawable/pozadi_encyklopedie"
     tools:context=".RizikoveFenomeny">
 
@@ -62,27 +62,29 @@
         android:onClick="challengeClick"/>
 
     <ImageView
-        android:contentDescription="fake news"
         android:id="@+id/imageView3"
-        android:layout_width="252dp"
-        android:layout_height="72dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:layout_alignStart="@+id/challenge"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="159dp"
-        android:src="@drawable/icon_fakenews"
-        android:onClick="fakenewsClick"/>
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="204dp"
+        android:contentDescription="fake news"
+        android:onClick="fakenewsClick"
+        android:src="@drawable/icon_fakenews" />
 
     <ImageView
-        android:contentDescription="hoax"
         android:id="@+id/imageView4"
-        android:layout_width="253dp"
-        android:layout_height="63dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
         android:layout_alignStart="@+id/challenge"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginBottom="77dp"
-        android:src="@drawable/icon_hoax"
-        android:onClick="hoaxClick"/>
+        android:layout_marginTop="294dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="hoax"
+        android:onClick="hoaxClick"
+        android:src="@drawable/icon_hoax" />
 
     <TextView
         android:id="@+id/textView"
